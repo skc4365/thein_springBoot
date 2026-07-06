@@ -27,13 +27,22 @@ public class CalcController {
 	
 //	----------------
 //	B. 스프링 방식: DI1: @Autowired 방식
-	@Autowired
-	private CalcService calcService;
+//	@Autowired
+//	private CalcService calcService;
 	
-//	스프링 방식: getMethod를 이용한 서비스단 사용방식
-	public void getCalc(CalcService calcService) {
-		this.calcService = calcService;
-	}
+//	----------------
+//	C. 스프링 방식: getMethod를 이용한 서비스단 사용방식
+//	private CalcService calcService;
+//	
+//	public void getCalc(CalcService calcService) {
+//		this.calcService = calcService;
+//	}
+	
+//	----------------
+//	D. 스프링 방식: 생성자를 이용한 서비스단 사용방식
+//	private CalcService calcService;
+//	
+
 	
 	// http://localhost:8081/add-calc?a=10&b=20
 	@GetMapping("add-calc")
@@ -41,8 +50,7 @@ public class CalcController {
 		return calcService.getAddCalc(a,b);
 	}
 	
-//	----------------
-//	C. 스프링 방식	
+
 	
 	
 	
