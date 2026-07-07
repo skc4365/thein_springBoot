@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.skc.mapper.MyMapper">
+
+    <!-- 전체 조회 -->
+    <select id="findAll" resultType="Member">
+        SELECT
+            id,
+            name
+        FROM member2
+        ORDER BY id
+    </select>
+
+    <!-- 상세 조회 -->
+    <select id="findById"
+            parameterType="int"
+            resultType="Member">
+        SELECT
+            id,
+            name
+        FROM member2
+        WHERE id = #{id}
+    </select>
+
+    <!-- 등록 -->
+    <insert id="insert"
+            parameterType="Member">
+        INSERT INTO member2
+        (
+            name
+        )
+        VALUES
+        (
+            #{name}
+        )
+    </insert>
+
+    <!-- 수정 -->
+    <update id="update"
+            parameterType="Member">
+        UPDATE member2
+           SET name = #{name}
+         WHERE id = #{id}
+    </update>
+
+    <!-- 삭제 -->
+    <delete id="delete"
+            parameterType="int">
+        DELETE
+          FROM member2
+         WHERE id = #{id}
+    </delete>
+
+</mapper>
