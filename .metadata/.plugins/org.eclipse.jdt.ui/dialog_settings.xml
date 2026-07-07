@@ -19,10 +19,10 @@
 		<item key="create_unimplemented" value="true"/>
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="207"/>
-		<item key="DIALOG_Y_ORIGIN" value="256"/>
-		<item key="DIALOG_WIDTH" value="595"/>
-		<item key="DIALOG_HEIGHT" value="684"/>
+		<item key="DIALOG_X_ORIGIN" value="405"/>
+		<item key="DIALOG_Y_ORIGIN" value="154"/>
+		<item key="DIALOG_WIDTH" value="597"/>
+		<item key="DIALOG_HEIGHT" value="669"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-21|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 	<section name="JavaElementSearchActions">
