@@ -26,22 +26,25 @@ public class CalcController {
 	
 	
 //	----------------
-//	B. 스프링 방식: DI1: @Autowired 방식
+//	B. 스프링 방식: DI: 필드 인젝션
 //	@Autowired
 //	private CalcService calcService;
 	
 //	----------------
-//	C. 스프링 방식: getMethod를 이용한 서비스단 사용방식
+//	C. 스프링 방식: DI: Setter 인젝션
 //	private CalcService calcService;
 //	
-//	public void getCalc(CalcService calcService) {
+//	public void setCalc(CalcService calcService) {
 //		this.calcService = calcService;
 //	}
 	
 //	----------------
-//	D. 스프링 방식: 생성자를 이용한 서비스단 사용방식
-//	private CalcService calcService;
+//	D. 스프링 방식: 생성자 인젝션
+	private CalcService calcService;
 //	
+	public CalcController(CalcService calcService) {
+		this.calcService = calcService;
+	}
 
 	
 	// http://localhost:8081/add-calc?a=10&b=20

@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RestController
 public class MyController {
 
-	@GetMapping("/myhello")
+	// http://localhost:8081/myhello?name=skc
+	@GetMapping("/myhello")											
 	public String myhello(@RequestParam String name) {
 		return "myhello "+ name;
 	}
