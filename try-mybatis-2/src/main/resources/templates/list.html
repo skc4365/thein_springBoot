@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이바티스-SqlSessionTemplate</title>
+    <style>
+      body{
+        margin: 100px; 
+      }
+    </style>
+</head>
+<body>
+        <h1>게시판 글목록 : 마이바티스-SqlSessionTemplate</h1>
+
+    <a href="/save">글쓰기</a>
+    <table>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+        </tr>
+        <tr th:each="board:${boardList}">
+            <td th:text="${board.id}"></td>
+            <td>
+                <a th:text="${board.title}" th:href="@{|/${board.id}|}"></a>
+            </td>
+            <td th:text="${board.writer}"></td>
+			<td th:text="${board.contents}"></td>
+        </tr>
+    </table>
+</body>
+</html>
