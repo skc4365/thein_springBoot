@@ -1,10 +1,12 @@
-body{
+.container{
         margin: 100px; 
+        background-color: red;
       }
-table, tr , th, td{
+/* table, tr , th, td{
     border: 1px solid green;
     border-collapse: collapse;
 }
 th, td{
     padding: 10px;
-}
+} */
+

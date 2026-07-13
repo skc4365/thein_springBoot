@@ -25,5 +25,19 @@ public class BoardService {
 	public List<BoardDTO> findAll() {
 		return repository.findAll();
 	}
+	
+	// 상세검색
+	public BoardDTO findByID(Long id) {
+		return repository.findById(id);
+	}
+	
+	// 수정
+	public void update(BoardDTO dto) {
+		repository.update(dto);
+	}
 
+	// 삭제
+	public void delete(Long id) {
+		repository.delete(id);
+	}
 }

@@ -14,7 +14,7 @@
 
 	<!-- 상세 조회 -->
 	<select id="findById"
-		parameterType="int"
+		parameterType="Long"
 		resultType="dto">
 		SELECT
 		id, title, writer, pass, contents
@@ -40,14 +40,14 @@
 		parameterType="dto">
 		UPDATE board2
 		SET 
-		name = #{title}, writer = #{writer},
+		title = #{title}, writer = #{writer},
 		pass = #{pass}, contents = #{contents}
 		WHERE id = #{id}
 	</update>
 
 	<!-- 삭제 -->
 	<delete id="delete"
-		parameterType="int">
+		parameterType="Long">
 		DELETE
 		FROM board2
 		WHERE id = #{id}
