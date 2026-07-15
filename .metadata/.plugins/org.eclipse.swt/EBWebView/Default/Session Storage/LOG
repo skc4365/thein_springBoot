@@ -1,3 +1,2 @@
-2026/07/08-17:40:13.680 40bc Reusing MANIFEST C:\st202605\thein_springBoot\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
-2026/07/08-17:40:13.684 40bc Recovering log #3
-2026/07/08-17:40:13.690 40bc Reusing old log C:\st202605\thein_springBoot\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/000003.log 
+2026/07/13-14:19:00.441 57dc Creating DB C:\st202605\thein_springBoot\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage since it was missing.
+2026/07/13-14:19:00.479 57dc Reusing MANIFEST C:\st202605\thein_springBoot\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
